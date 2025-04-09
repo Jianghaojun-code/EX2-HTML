@@ -154,24 +154,5 @@
         <p>&copy; 2025 Programming4</p>
         <p>Get in touch with us: <a href="mailto:shinchan-lovers@justlearninghtml.com">shinchan-lovers@justlearninghtml.com</a></p>
     </center>
-
-    <script>
-        const favoriteCharacterSelect = document.getElementById('favorite-character');
-        const otherCharacterDiv = document.getElementById('other-character');
-        otherCharacterDiv.style.display = 'none';
-
-        favoriteCharacterSelect.addEventListener('change', () => {
-            if (favoriteCharacterSelect.value === 'other') {
-                otherCharacterDiv.style.display = 'block';
-            } else {
-                otherCharacterDiv.style.display = 'none';
-            }
-        });
-
-        document.getElementById('character-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            alert('Form submitted successfully!');
-        });
-    </script>
 </body>
 </html>
